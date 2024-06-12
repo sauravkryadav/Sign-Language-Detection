@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Main axis is vertical */
+            min-height: 100vh; /* Make sure footer sticks to the bottom */
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Home button */
+        .home-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .content {
+            flex-grow: 1; /* Allow content to grow and fill remaining space */
+            padding: 20px;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between items */
+        }
+        .text {
+            width: calc(50% - 10px); /* Take half of the available space minus some margin */
+        }
+        .image-container {
+            width: calc(50% - 10px); /* Take half of the available space minus some margin */
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="/" class="home-button">Home</a>
+    <div class="header">
+        <h2>About Sign Language Detection</h2>
+    </div>
+
+    <div class="content">
+        <div class="text">
+            <p>Welcome to the future of communication! Our cutting-edge sign language detection technology uses advanced computer vision and machine learning to accurately interpret hand gestures and movements. This breakthrough tool bridges the gap between the deaf and hard of hearing communities and those who do not understand sign language, fostering greater inclusivity and understanding.</p>
+            <p>Experience the power of real-time sign language translation, making communication seamless and instant. Whether you're learning sign language or need assistance in conversations, our tool is here to help. Dive in and discover how AI can transform communication!</p>
+            <h3>What is Sign Language?</h3>
+            <p>Juan Pablo de Bonet is credited with publishing the first sign language instructional book for the deaf in 1620. The book was based on the work of Girolamo Cardano, an Italian physician, who believed that it wasn’t necessary to hear words in order to understand ideas.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://www.verywellhealth.com/thmb/iDDtbRcWJaXDjpNJAudExTCd_d8=/600x450/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-523433428-57a9050d5f9b58974a89e520.jpg" alt="Sign Language Image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sign Language Detection Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

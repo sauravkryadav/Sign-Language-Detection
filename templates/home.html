@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-links {
+            margin-top: 10px;
+            text-align: right;
+            margin-right: 20px; /* Add right margin to move links to the right corner */
+        }
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center; /* Center align content */
+        }
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .description h1 {
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .video-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .video-section video {
+            max-width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .image-container {
+            margin-top: 5px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 150%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Sign Language Detection</h1>
+        <div class="header-links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/make_prediction.html">Make Prediction</a>
+            <a href="/login.html">Login / Register</a>
+        </div>
+    </header>
+
+    
+
+    <div class="container">
+        <div class="description">
+            <h1>Welcome to Sign Language Detection</h1>
+            <p>This project uses computer vision and machine learning to detect and translate sign language gestures into text.</p>
+        </div>
+
+        
+       <div class="image-container">
+            <img src="sign_image.jpg" alt="Sign Language Image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sign Language Detection Project. All rights reserved.</p>
+    </footer>
+
+   <!-- <script>
+        // Get access to the camera
+        async function setupCamera() {
+            const video = document.getElementById('video');
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+        }
+
+        // Initialize the camera when the page loads
+        window.addEventListener('load', setupCamera);
+    </script>-->
+</body>
+</html>

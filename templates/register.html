@@ -1,0 +1,136 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Language Detection - Register</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<script>
+        function showAlert(message) {
+            if (message) {
+                alert(message);
+            }
+        }
+</script>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-4">
+				<h2 class="text-center">Sign Language Detection - Register</h2>
+				<form action="/register" method="post">
+					<div class="form-group">
+						<label for="username">Username:</label>
+						<input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+					</div>
+					<div class="field input">
+						<label for="age">Age</label>
+						<input type="number" name="age" id="age" autocomplete="off" required>
+					</div>
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+					</div>
+					<div class="form-group">
+						<label for="confirm-password">Confirm Password:</label>
+						<input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Confirm password">
+					</div>
+					<button type="submit" class="btn btn-primary btn-block">Register</button>
+					<p class="text-center">Already have an account? <a href="/login">Login</a></p>
+				</form>
+			</div>
+
+			<div class="image-container">
+				<img src="sign_image.jpg" alt="Sign Language Image">
+			</div>
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var flashMessage = "{{ get_flashed_messages()[0] if get_flashed_messages() else '' }}";
+				showAlert(flashMessage);
+			});
+		</script>
+	</div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Detection - Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            background-image: url('sign_image.jpg');
+			height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker, semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for better readability */
+            color: white; /* Change text color to white for better contrast */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<script>
+    function showAlert(message) {
+        if (message) {
+            alert(message);
+        }
+    }
+</script>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 form-container">
+                <h2 class="text-center">Sign Language Detection - Register</h2>
+                <form action="/register" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="field input">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" name="age" id="age" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Confirm password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    <p class="text-center">Already have an account? <a href="/login">Login</a></p>
+                </form>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var flashMessage = "{{ get_flashed_messages()[0] if get_flashed_messages() else '' }}";
+                showAlert(flashMessage);
+            });
+        </script>
+    </div>
+</body>
+</html>
